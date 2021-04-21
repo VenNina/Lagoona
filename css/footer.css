@@ -1,0 +1,86 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 53px 40px 50px;
+  width: 1168px;
+  border-radius: 12px;
+  color: var(--back-fon);
+  background-image: url(../img/sun.png);
+  background-position-x: 80%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--body-text);
+  line-height: 25px;
+}
+
+.footer-left {
+  margin-right: 123px;
+  max-width: 300px;
+}
+
+.footerl-left__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.footer-privacy {
+  color: var(--gold-text);
+}
+
+.footer-privacy:hover, .footer-tel__link:hover, .footer-mail__link:hover {
+  color: var(--java);
+}
+
+.footer-middle {
+  margin-right: 259px;
+  line-height: 20px;
+}
+
+.footer-middle__address {
+  margin-bottom: 40px;
+}
+
+.footer-contacts__item:nth-child(2n) {
+  margin-bottom: 30px;
+}
+
+.footer-contacts__link {
+  color: var(--gold-text);
+}
+
+.social__item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.social__item:hover {
+  background-color: var(--thunderbird);
+  border-radius: 50%;
+}
+
+.social__link {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.social__link--tripadvisor {
+  background-image: url(../img/tripadvisor.svg);
+}
+
+.social__link--twitter {
+  background-image: url(../img/twitter.svg);
+}
+
+.social__link-facebook {
+  background-image: url(../img/facebook.svg);
+}
+
+.social__link--vk {
+  background-image: url(../img/social.svg);
+}
+
+.social__link--google {
+  background-image: url(../img/google-plus-social-logotype.svg);
+}

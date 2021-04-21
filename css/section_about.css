@@ -1,0 +1,13 @@
+.section-about {
+  margin-bottom: 90px;
+}
+
+.section-about__title {
+  margin-bottom: 13px;
+}
+
+.section-about__description {
+  margin-left: 45px;
+  max-width: 940px;
+  color: #666;
+}

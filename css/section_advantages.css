@@ -1,0 +1,56 @@
+.section-advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-advantages__item {
+  flex: 1 1 23%;
+  margin-bottom: 25px;
+  padding: 45px 34px 29px 43px;
+  max-width: 23%;
+}
+
+.section-advantages__item:not(:nth-child(4n+4)) {
+  margin-right: 30px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 15px;
+  width: 63px;
+  height: 59px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.section-advantages__icon-bathtub {
+  background-image: url(../img/bathtub.svg);
+}
+
+.section-advantages__icon-hanger {
+  background-image: url(../img/hanger.svg);
+}
+
+.section-advantages__icon-heating {
+  background-image: url(../img/heating.svg);
+}
+
+.section-advantages__icon-hotel-key {
+  background-image: url(../img/hotel-key.svg);
+}
+
+.section-advantages__icon-parking {
+  background-image: url(../img/parking.svg);
+}
+
+.section-advantages__icon-reception {
+  background-image: url(../img/reception.svg);
+}
+
+.section-advantages__icon-security-box {
+  background-image: url(../img/security-box.svg);
+}
+
+.section-advantages__icon-swimming-pool {
+  background-image: url(../img/swimming-pool.svg);
+}

@@ -1,0 +1,45 @@
+/*------------------ MullerLight, 400-нормальное начертание ---------------*/
+
+@font-face {
+  /* правило, определющее посльзовательские шрифты в таблице стилей, подключаем шрифты в CSS файле используя правило @font-face */
+  font-family: "Muller";
+  /* название шрифта */
+  font-style: normal;
+  /* определяет начертание шрифта, обычное, курсивное или наклонное, normal - обычное */
+  font-weight: 300;
+  /* насыщенность шрифта, 300 - светлое начертание шрифта */
+  /* font-display: swap; */
+  /* свойство определяет, как файлы шрифтов загружаються и отображаются в браузере,
+                          swap - заменяем пользовательский шрифт на резерный во время загрузки , что приводит к FOUT */
+  src: local("Muller-Light"), /* Браузер сначала попробует найти шрифт локально, на компьютере пользователя */
+  url("../fonts/Muller-Light.woff2") format("woff2"), /* Если не получилось, загрузит woff2 */
+  url("../fonts/Muller-Light.woff") format("woff");
+  /* Если браузер не поддерживает woff2, загрузит woff */
+}
+
+@font-face {
+  font-family: "Muller";
+  /* название */
+  font-style: normal;
+  /* начертание */
+  font-weight: 400;
+  /* жирность */
+  /* font-display: swap; */
+  src: local("Muller-Regular"), url("../fonts/Muller-Regular.woff2") format("woff2"), url("../fonts/Muller-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  /* font-display: swap; */
+  src: local("Muller-Medium"), url("../fonts/Muller-Medium.woff2") format("woff2"), url("../fonts/Muller-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  /* font-display: swap; */
+  src: local("Muller-Bold"), url("../fonts/Muller-Bold.woff2") format("woff2"), url("../fonts/Muller-Bold.woff") format("woff");
+}

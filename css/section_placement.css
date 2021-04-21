@@ -1,0 +1,114 @@
+.section-placement__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-placement__item {
+  flex: 1 1 31%;
+  margin-bottom: 25px;
+  padding: 0;
+  max-width: 32%;
+}
+
+.article-placement__item {
+  padding: 0;
+}
+
+.section-placement__item:not(:nth-child(3n + 3)) {
+  margin-right: 25px;
+}
+
+.article-placement__discr {
+  padding: 20px 43px 40px;
+}
+
+.article-placement__img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.article-placement__price {
+  display: inline-block;
+  margin-right: 36px;
+  color: var(--gray-text);
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--body-text);
+}
+
+.night {
+  font-size: 16px;
+  color: var(--body-text);
+}
+
+.article-placement__stars {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.article-placement__stars-img {
+  width: 14px;
+  height: 16px;
+}
+
+.article-placement__stars-img:not(:last-child) {
+  margin-right: 2px;
+}
+
+.article-placement__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--body-text);
+}
+
+.article-placement__location {
+  margin-bottom: 11px;
+  color: var(--gray-text);
+}
+
+.section-placement__item-all {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  padding: 44px 36px;
+  position: relative;
+  width: 100%;
+  min-height: 440px;
+  background-image: url(../img/41.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  transition: transform .2s linear;
+}
+
+.section-placement__item-all:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.section-placement__item-all-link {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--back-fon);
+}
+
+/* растягиваем ссылку по всему блоку с помощью псевдоэлемента*/
+
+.section-placement__item-all-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-placement__item-all-link::after {
+  position: absolute;
+  content: "\f105";
+  font-family: FontAwesome;
+  font-size: 22px;
+  transform: translateX(10px);
+}

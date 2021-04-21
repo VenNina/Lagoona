@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+  /* алгоритм расчета ширины и высоты */
+}
+
+/* * {
+  outline: 2px dotted hotpink;
+} */
+
+*, ::before,
+/* создаёт псевдоэлемент, который является первым потомком выбранного элемента */
+
+::after {
+  /* создает псевдоэлемент, который является последним потомком выбранного элемента */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* алгоритм расчеты ширины и высоты элемента, inherit - наследует значение родителя */
+}
+
+:root {
+  --body-text: #333;
+  --gold-text: #c93;
+  --back-fon: #fff;
+  --gray-text: #999;
+  --color-link: #fc6;
+  --height-picture: 165px;
+  --java: #0000d0;
+  --thunderbird: #0000d0;
+  --visited: #900060;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  /* min-width: 1920px; */
+  background-color: #f1f1f1;
+  font-family: "Muller", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--body-text);
+  /* word-break: break-all; */
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  /* по умолчанию у списков есть отступы, мы их убираем */
+  padding: 0;
+  list-style: none;
+  /* задаем стили маркеров/буллитов в списке */
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  /* для статичной верстки указать min-width */
+  max-width: 1198px;
+  min-width: 1198px;
+  /* 1168 + 15 padding */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  /* Визуально прячем заголовок */
+  position: absolute;
+  /* позиционирование относительно родителя c position: relative или относительно HTML*/
+  clip: rect(0 0 0 0);
+  /* определяем видимую часть элемента, обрезаем элемент до нуля */
+  width: 1px;
+  /* ширина */
+  height: 1px;
+  /* высота */
+  margin: -1px;
+  /* внешние отступы */
+}
+
+/*  ссылка в виде кнопки */
+
+.btn {
+  display: inline-block;
+  /* чтобы избежать наползания текста*/
+  padding: 5px 19px;
+  min-height: 43px;
+  border: 1px solid var(--gold-text);
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--gold-text);
+  transition: transform .2s ease-in;
+}
+
+.btn:hover {
+  color: var(--back-fon);
+  cursor: pointer;
+  background-color: var(--gold-text);
+  /* transform: scale(1.05, 1.05); */
+}
+
+.btn:active {
+  background-color: #dbcbaae8;
+  border-color: #dbcbaae8;
+  outline: none;
+  /* transform: scale(1, 1); */
+}
+
+.btn-big {
+  padding: 18px 30px;
+}
+
+.style__background {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--back-fon);
+}
+
+.style-btn {
+  min-height: 70px;
+  min-width: 120px;
+  padding: 10px 30px;
+  font-weight: 700;
+  border: none;
+  background-color: #cc9933;
+  border-radius: 12px;
+  color: var(--back-fon);
+  text-align: center;
+  transition: transform .1s linear;
+}
+
+.style-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+.style-btn:active {
+  background-color: #dbcbaae8;
+  outline: none;
+  transform: scale(1, 1);
+}
+
+.section-title {
+  margin-left: 39px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.margin-bottom {
+  margin-bottom: 74px;
+}
+
+.margin-bottom__small {
+  margin-bottom: 47px;
+}
+
+.gold-text {
+  color: var(--gold-text);
+}
+
+.gray-text {
+  color: var(--gray-text);
+}
+
+.link {
+  padding-right: 15px;
+  width: 19px;
+  height: 16px;
+  background-image: url(../img/ugolnik1.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-image: url(../img/ugolnik_link.svg);
+}

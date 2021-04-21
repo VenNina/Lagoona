@@ -1,0 +1,76 @@
+.section-services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.section-services__item {
+  flex: 1 1 48%;
+  margin-bottom: 25px;
+  /* 165px высота фона/картинки + 160px/последующий контент = 325px */
+  min-height: calc(var(--height-picture) + 160px);
+  max-width: 49%;
+  border-radius: 12px;
+  background-color: var(--back-fon);
+}
+
+.section-services__item:nth-child(odd) {
+  margin-right: 25px;
+}
+
+.section-services__icon {
+  /* width: 572px;
+  height: 165px; */
+  background-position: top center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.section-services__icon--exclusive {
+  background-image: url(../img/exclusive.jpg);
+}
+
+.section-services__icon--banquet {
+  background-image: url(../img/banquet.jpg);
+}
+
+.section-services__icon--sauna {
+  background-image: url(../img/sauna.jpg);
+}
+
+.section-services__icon--parking {
+  background-image: url(../img/secure_parking.jpg);
+}
+
+.section-services__inner {
+  /* 165 высота фона + 35 отступ от картинки = 200px */
+  padding-top: calc(var(--height-picture) + 29px);
+  padding-right: 101px;
+  padding-bottom: 29px;
+  padding-left: 45px;
+}
+
+.section-services__link {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--gold-text);
+}
+
+.section-services__link::after {
+  content: "\f105";
+  display: inline-block;
+  margin-left: 6px;
+  transform: translateY(3px);
+  font-family: FontAwesome;
+  font-size: 26px;
+}
+
+.section-services__link:hover {
+  color: var(--java);
+  text-decoration: underline;
+}
+
+.section-services__link:visited {
+  color: var(--visited);
+}

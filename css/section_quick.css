@@ -1,0 +1,40 @@
+.flex-parent {
+  display: flex;
+}
+
+.flex-child {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 50%;
+}
+
+.flex-child:not(:last-child) {
+  margin-right: 58px;
+}
+
+.section-quiсk {
+  max-width: 44%;
+}
+
+.section-quiсk__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-quick__input {
+  min-height: 70px;
+}
+
+.section-quick__input:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.section-quick__discr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-quick__btn:not(:last-child) {
+  margin-right: 30px;
+}
